@@ -11,8 +11,8 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=admin
-      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=devx10@69
+      - POSTGRES_USER=devx10
       - POSTGRES_DB=kalinduauto
     networks:
       - default
@@ -38,9 +38,9 @@ services:
     container_name: keycloak
     environment:
       KC_DB: postgres
-      KC_DB_URL: jdbc:postgresql://postgres:5432/kalinduauto
-      KC_DB_USERNAME: admin
-      KC_DB_PASSWORD: admin
+      KC_DB_URL: jdbc:postgresql://kalinduauto.devx10.live:5432/kalinduauto
+      KC_DB_USERNAME: devx10
+      KC_DB_PASSWORD: devx10@69
 
       KC_HOSTNAME: localhost
       KC_HOSTNAME_PORT: 8080
@@ -57,6 +57,7 @@ services:
       - postgres
     ports:
       - 8080:8080
+
 
 volumes:
   pgdata:

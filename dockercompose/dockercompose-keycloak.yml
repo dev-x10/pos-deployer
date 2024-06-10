@@ -7,8 +7,8 @@ services:
     environment:
       KC_DB: postgres
       KC_DB_URL: jdbc:postgresql://postgres:5432/kalinduauto
-      KC_DB_USERNAME: admin
-      KC_DB_PASSWORD: admin
+      KC_DB_USERNAME: devx10
+      KC_DB_PASSWORD: devx10@69
 
       KC_HOSTNAME: localhost
       KC_HOSTNAME_PORT: 8080
