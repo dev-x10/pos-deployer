@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  portainer:
+    image: nginx:latest
+    container_name: ka-proxy
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./conf:/etc/nginx/conf.d:rw
+      - ./certs:/etc/nginx/certs:rw
+    networks:
+      - default
