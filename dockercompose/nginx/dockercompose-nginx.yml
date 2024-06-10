@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  portainer:
+  nginx:
     image: nginx:latest
     container_name: ka-proxy
     restart: unless-stopped
