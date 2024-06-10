@@ -31,7 +31,6 @@ services:
     networks:
       - default
     depends_on:
-
       - postgres
 
   keycloak:
@@ -43,7 +42,7 @@ services:
       KC_DB_USERNAME: devx10
       KC_DB_PASSWORD: devx10@69
 
-      KC_HOSTNAME: localhost
+      KC_HOSTNAME: kalinduauto.devx10.live
       KC_HOSTNAME_PORT: 8080
       KC_HOSTNAME_STRICT: false
       KC_HOSTNAME_STRICT_HTTPS: false
@@ -56,6 +55,7 @@ services:
     command: start-dev
     depends_on:
       - postgres
+      - pgadmin
     ports:
       - 8080:8080
 
